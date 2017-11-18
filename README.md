@@ -4,6 +4,9 @@ A webcam captures images and this feed is sent to a computer. The images are pro
 The Arduino controls a servo motor which is placed on the bottom of the webcam. Hence, the camera turns in the direction of the detected motion.
 
 motion follow.py contains the python code which detect the motion and it position and sends this information to a .txt file
+
 serial comm.py fetches this information and sends it to the arduino via serial communication
+
 new.txt is the text file used for this purpose
-arduinocode.ino contains the code which reads the serially communicated data from the python program and controls the servo accordinly
+
+arduinocode.ino contains the code which reads the serially communicated data from the python program and controls the servo accordingly
