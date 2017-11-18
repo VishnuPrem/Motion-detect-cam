@@ -1,4 +1,7 @@
 # Motion-detect-cam
+
+It is a camera which turns towards detected motion. Hence it will rotate to face any disturbances in its field of view. This can be used as a security camera. The working is explained below.
+
 A webcam captures images and this feed is sent to a computer. The images are processed using Python with OpenCV. This is done by subtracting the consecutive images with the next image obtained from the camera feed. The resulting image will show just the regions in motion. This resulting image is divided into three regions: left, middle and right. The region with the most movement is where the camera is required to point.
  After the direction of motion is detected it is sent to another python program through a file which sends this data to the Arduino via serial communication.
 The Arduino controls a servo motor which is placed on the bottom of the webcam. Hence, the camera turns in the direction of the detected motion.
